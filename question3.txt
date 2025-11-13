@@ -1,0 +1,2 @@
+If #include <stdio.h> is removed when the program calls printf, the program would fail during compilation stage. The header <stdio.h> contains the declaration for printf function, and tells the compiler about the function's return type and types of its arguments. Without it, the compiler encounters an undeclared function.
+The failing stage is Linking and the expected error message is "undefined reference to printf" from the linker.
