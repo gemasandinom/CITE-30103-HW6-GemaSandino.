@@ -1,0 +1,8 @@
+int1value = 10; The error is that the name of the variable starts with a number.
+The corrected form is: int value1 = 10;
+
+float avg-rate = 12.5; The error is the character '-' because a variable name cannot contain special characters, only '_'
+The corrected for is: float avg_rate = 12,5;
+
+char Class = 'A'; The error is the variable name starts with a capital letter, and "class" is a keword in other programming languages so it is not recommended to use.
+The corrected form is: char class_grade = 'A';
