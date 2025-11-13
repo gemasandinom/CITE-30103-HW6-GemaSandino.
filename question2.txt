@@ -1,0 +1,9 @@
+1. Preprocessing: It handles directives like #include and #define. It includes the content of header files into the source files, and removes comments. A possible error is a missing or incorrect header leading to a file not found.
+
+2. Compilation: It takes the preprocessed code and translates it into assembly language. It performs syntax checking, type checking, and optimizations to generate efficient assembly code. A possible error is syntax errors, such as missing a semicolong or incorrect variable declaration.
+
+3. Assembly: It converts the assembly code into machine code and creates an object file, which contains machine instructions. A possible error is an invalid or unsupported instruction in the assembly.
+ 
+4. Linking: It combines one or more object files and libraries into a single executable file. It assigns final memory addresses to functions and data. A possible error is an "undefined reference" which occurs when the linker can't find the definition for a function or variable that was declared but not provided.
+
+5. Loading: It loads the program into the memory when the program is run. It involves allocating memory for the code, data, and stack, and setting up the execution environment. A possible error is missing shared libraries.
