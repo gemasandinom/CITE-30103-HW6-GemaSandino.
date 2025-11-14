@@ -1,0 +1,14 @@
+The developer expected a different output than what they got because of operator precedence.
+In C, the operator << has higher precendence than +, so the expression a + b << 1 is interpreted as a + (b << 1). Meaning that given a = 5 and b = 3, (b << 1) is evaluated first giving 3 << 1 = 6.
+Then a + 6, so 5 + 6 = 11.
+
+Parenthesis correction:
+The developer could use parenthesis so the addition happens first:
+res = (a + b) << 1;
+which give (5 + 3) << 1 = 8 << 1 = 16.
+
+Arithmetic correction:
+The developer could use arithmetic:
+res = (a + b) * 2;
+which gives (5 + 3) * 2 = 8 * 2 = 16.
+
