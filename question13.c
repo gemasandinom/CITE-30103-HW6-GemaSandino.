@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+	int n;
+
+	printf("Enter a number: ");
+	scanf("%d", &n);
+
+	if (n % 2 == 0 && n % 3 == 0 && n % 7 != 0) {
+		printf("%d is divisible by 2 and 3 but not 7\n", n);
+	} else {
+		printf("%d does not meet the criteria\n", n);
+	}
+
+	return 0;
+}
